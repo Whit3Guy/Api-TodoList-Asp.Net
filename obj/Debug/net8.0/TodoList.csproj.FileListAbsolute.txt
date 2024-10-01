@@ -31,3 +31,4 @@
 /home/white/workspace/csharp/projetos/TodoList/obj/Debug/net8.0/TodoList.pdb
 /home/white/workspace/csharp/projetos/TodoList/obj/Debug/net8.0/TodoList.genruntimeconfig.cache
 /home/white/workspace/csharp/projetos/TodoList/obj/Debug/net8.0/ref/TodoList.dll
+/home/white/workspace/csharp/projetos/TodoList/obj/Debug/net8.0/TodoList.sourcelink.json

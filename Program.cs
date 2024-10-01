@@ -1,3 +1,5 @@
+using TodoList.todolist;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -26,6 +28,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");  // Middleware CORS deve vir antes das rotas
+
+app.AddRoutesTodoList();
+
 
 //app.MapGet("app",  () => "hello World");
 
