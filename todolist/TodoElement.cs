@@ -14,6 +14,8 @@ namespace TodoList.todolist
 
         public bool Completed {get; private set;}
 
+        public TodoElement(){}
+
         public TodoElement(string title, string subtitle){
             Title = title;
             SubTitle = subtitle;
