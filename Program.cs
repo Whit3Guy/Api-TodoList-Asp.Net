@@ -27,7 +27,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");  // Middleware CORS deve vir antes das rotas
 
-app.MapGet("app",  () => "hello World");
+//app.MapGet("app",  () => "hello World");
 
 app.Run();
 
