@@ -18,12 +18,12 @@ namespace TodoList.database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //string de conexão no appsettings.json na raiz do projeto pq essa bomba da peste não suporta .env de forma nativa e eu fiquei meia hora até entender que tem que colocar o caminho do arquivo no DotNet.Env().env().load()
-            var connectionString = _configuration.GetConnectionString("DefaultConnection");
+            string connectionString = _configuration.GetConnectionString("DefaultConnection");
             optionsBuilder.UseMySql(connectionString,
-                ServerVersion.AutoDetect("127.0.0.1"));
+                ServerVersion.AutoDetect(connectionString));
             base.OnConfiguring(optionsBuilder);
         }
         // coluna da tabela
-        DbSet<TodoElement> TodoElements {get;set;}
+        public DbSet<TodoElement> TodoElements {get;set;}
     }
 }

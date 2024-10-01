@@ -21,5 +21,14 @@ namespace TodoList.todolist
             SubTitle = subtitle;
             Completed =  false;
         }
+
+        public void ChangeName(string title, string subtitle){
+            Title = title;
+            SubTitle = subtitle;
+        }
+
+        public void ChangeCompleted(bool x){
+            Completed = x;
+        }
     }
 }
